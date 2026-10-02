@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fff7ec;
+  --ink: #3a2a5c;
+  --muted: #7d6f9c;
+  --accent: #7d68d8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1640;
+    --ink: #f1ecff;
+    --muted: #b7acd9;
+    --accent: #c9b8ff;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    17px/1.6 system-ui,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+a {
+  color: var(--accent);
+}
+.muted {
+  color: var(--muted);
+}
+.game {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.game img {
+  width: 160px;
+  border-radius: 16px;
+}
+@media (max-width: 480px) {
+  .game {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
