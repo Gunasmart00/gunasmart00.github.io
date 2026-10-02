@@ -1,0 +1,7 @@
+{
+  "ads.enabled": true,
+  "ads.everyNights": 3,
+  "ads.minSeconds": 240,
+  "ads.firstAfterNight": 3,
+  "ads.skipAfterLosses": 2
+}
